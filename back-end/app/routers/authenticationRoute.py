@@ -45,6 +45,7 @@ async def registration(
         await db.rollback()
         raise HTTPException(status_code=400, detail=str(e))
 
+
 @router.post("/login", response_model=UserLoginResponse)
 async def login(request: UserLoginRequest, db: AsyncSession = Depends(getDB)):
     email = request.email.strip()
@@ -72,7 +73,7 @@ async def login(request: UserLoginRequest, db: AsyncSession = Depends(getDB)):
         )
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail="Login failed")
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.get("/profile", response_model=userProfileResponse)
