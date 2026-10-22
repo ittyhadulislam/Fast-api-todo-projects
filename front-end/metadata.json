@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow - Team Todo & Priority Manager",
+  "description": "Collaborative task management application with team member assignment, priority matrix, status workflows, and user authentication powered by Redux Toolkit and RTK Query.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

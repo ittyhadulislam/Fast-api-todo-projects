@@ -1,0 +1,9 @@
+alembic init alembic
+
+alembic revision --autogenerate -m "create student table"
+
+alembic history
+alembic current
+alembic upgrade head
+alembic downgrade -1, -2, -3
+alembic downgrade +1, +2, +3
