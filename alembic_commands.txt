@@ -7,3 +7,10 @@ alembic current
 alembic upgrade head
 alembic downgrade -1, -2, -3
 alembic downgrade +1, +2, +3
+
+
+
+
+--- Postgresql
+pip install psycopg2-binary
+pip install asyncpg
